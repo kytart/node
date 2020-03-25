@@ -1084,9 +1084,9 @@ static ssize_t uv__fs_copyfile(uv_fs_t* req) {
   int dst_flags;
   int result;
   int err;
-  size_t bytes_to_send;
-  int64_t in_offset;
-  ssize_t bytes_written;
+  off_t bytes_to_send;
+  off_t in_offset;
+  off_t bytes_written;
 
   dstfd = -1;
   err = 0;
